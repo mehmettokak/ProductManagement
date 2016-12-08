@@ -1,0 +1,12 @@
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\obj\Debug\Product.Entity.csprojResolveAssemblyReference.cache
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\bin\Debug\Product.Entity.dll.config
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\bin\Debug\Product.Entity.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\bin\Debug\Product.Entity.pdb
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\bin\Debug\EntityFramework.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\bin\Debug\EntityFramework.xml
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\obj\Debug\Product.Entity.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\obj\Debug\Product.Entity.pdb
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\obj\Debug\Product.Entity.Migrations.qqq12.resources
+C:\Users\byguro\Desktop\ProductManagement\Product.Entity\obj\Debug\Product.Entity.csproj.GenerateResource.Cache

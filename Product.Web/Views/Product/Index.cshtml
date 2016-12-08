@@ -1,0 +1,51 @@
+﻿@model Product.Web.ViewModel.ProductModel
+    @using Product.BAL.Tool
+@{
+    ViewBag.Title = "Ürün Detay";
+   
+}
+
+<div class="row">
+    @Html.Partial("_partial/MainMenu", Model.ListCategory)
+</div>
+
+<div class="col-md-9">
+    <div class="span6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+<h3 class="panel-title">@Model.CurrentProduct.Name</h3>
+            </div>
+            <div class="panel-body">
+                @{
+                    var img = Model.CurrentProduct.ProductImages;
+                    if (img.Count() > 0)
+                    {
+                        <img width="370" height="400" src="@img.FirstOrDefault().ImageUrl.ToSetFilePath()" />
+                    }
+                }
+                    
+                         
+
+            </div>
+        </div>
+    </div>
+    <div class="span7">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Ürün Özellikleri</h3>
+                </div>
+            <div class="panel-body">
+                <table class="table table-striped">
+                    @foreach (var features in Model.CurrentProduct.ProductFeatures)
+                    {
+                        <tr>
+                            <td><strong>@features.Name</strong></td>
+                            <td>@features.Value</td>
+                          
+                        </tr>
+                    }
+                </table>
+            </div>
+            </div>
+            </div>
+        </div>

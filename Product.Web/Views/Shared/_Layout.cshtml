@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehmet TOKAK</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <header id="header">
+        <div>
+            <div id="logo">
+                <h1><a href="/" class="brand">Product Web</a></h1>
+                <a href="@Url.Action("Viewer","Pdf",new { path="Mehmet TOKAK-CV.pdf" })">Pdf Görüntüle-1</a><br />
+                
+                    <a href="/web/viewer.html?file=Document/Mehmet TOKAK-CV.pdf" target="_blank">Pdf Görüntüle-2</a>
+               
+            </div>
+        </div>
+    </header>
+   <div class="body-content">
+       @RenderBody()
+   </div>
+      
+    
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

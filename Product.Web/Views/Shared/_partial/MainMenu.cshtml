@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Product.Entity.Model.Category>
+<div class="col-md-2">
+    @{ 
+        if (Model.Any())//model doluysa true doner.
+        {
+<ul class="nav nav-pills nav-stacked" >
+    @foreach (var category in Model)
+    {
+        <li>
+            @Html.ActionLink(category.Name,"Index","Category",new { id=category.Id},new { })
+        </li>
+    }
+    </ul>
+        }
+    }
+</div>

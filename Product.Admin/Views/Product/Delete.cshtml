@@ -1,0 +1,57 @@
+﻿@model Product.Admin.ViewModel.ProductModel
+
+@{
+    ViewBag.Title = "Ürün Sil";
+ 
+}
+
+<h2>Bü Ürünü Silmek istiyormusunuz?</h2>
+
+
+<div>
+  <h4>Dikkat=> Bu ürün  silinirse bağlı olan resimlerde otomatik silinecektir. </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        @{
+            var prodListImage = Model.ProductImages.ToList();
+            if (prodListImage != null)
+            {
+                <div class="form-group">
+                    @foreach (var item in prodListImage)
+                {
+
+                        <dl class="col-md-3">
+                            <dt> <img src="@item.ImageUrl" style="width:30%" /></dt>
+
+                        </dl>
+
+                    }
+
+                </div>
+            }
+        }
+     </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Sil" class="btn btn-default" /> |
+            @Html.ActionLink("Listeye Dön", "Index")
+        </div>
+    }
+</div>

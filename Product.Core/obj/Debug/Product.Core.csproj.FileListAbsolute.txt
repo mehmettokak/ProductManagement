@@ -1,0 +1,5 @@
+C:\Users\byguro\Desktop\ProductManagement\Product.Core\bin\Debug\Product.Core.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.Core\bin\Debug\Product.Core.pdb
+C:\Users\byguro\Desktop\ProductManagement\Product.Core\obj\Debug\Product.Core.csprojResolveAssemblyReference.cache
+C:\Users\byguro\Desktop\ProductManagement\Product.Core\obj\Debug\Product.Core.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.Core\obj\Debug\Product.Core.pdb

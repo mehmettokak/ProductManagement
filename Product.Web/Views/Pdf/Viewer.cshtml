@@ -1,0 +1,8 @@
+﻿@model Product.Web.ViewModel.ViewerModel
+@{
+    ViewBag.Title = "Viewer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<iframe src="/ViewerJS/@Model.path" style="width:100%; border: none;margin-left:20%;" allowfullscreen webkitallowfullscreen></iframe>
+

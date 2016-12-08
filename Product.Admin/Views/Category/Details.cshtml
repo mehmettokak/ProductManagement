@@ -1,0 +1,27 @@
+﻿@model Product.Entity.Model.Category
+
+@{
+    ViewBag.Title = "Kategori Detay";
+}
+
+
+    <div>
+        <h4>Kategori Detay</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.Id  }) |
+        @Html.ActionLink("Sil", "Delete", new { id = Model.Id }) |
+        @Html.ActionLink("Listeye Dön", "Index")
+    </p>

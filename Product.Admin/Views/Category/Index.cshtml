@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Product.Entity.Model.Category>
+@{
+    ViewBag.Title = "Kategoriler";
+}
+<h1>Kategoriler <small>@(TempData["err"] == null ? "" : TempData["err"])</small></h1>
+<hr />
+<p>
+    @Html.ActionLink("Yeni Kategori","Create")
+</p>
+<table class="table">
+<tr>
+    <th>
+        @Html.DisplayNameFor(model=>model.Name)
+    </th>
+</tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(model=>item.Name)</td>
+            <td>@Html.ActionLink("Düzenle","Edit",new {id=item.Id })</td>
+            <td>@Html.ActionLink("Detaylar", "Details", new { id = item.Id })</td>
+            <td>@Html.ActionLink("Sil", "Delete", new { id = item.Id })</td>
+        </tr>
+    }
+   
+</table>

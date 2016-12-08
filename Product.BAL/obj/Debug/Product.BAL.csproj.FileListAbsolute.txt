@@ -1,0 +1,12 @@
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\Product.BAL.dll.config
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\Product.BAL.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\Product.BAL.pdb
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\EntityFramework.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\Product.Entity.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\Product.Entity.pdb
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\EntityFramework.xml
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\obj\Debug\Product.BAL.csprojResolveAssemblyReference.cache
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\obj\Debug\Product.BAL.dll
+C:\Users\byguro\Desktop\ProductManagement\Product.BAL\obj\Debug\Product.BAL.pdb

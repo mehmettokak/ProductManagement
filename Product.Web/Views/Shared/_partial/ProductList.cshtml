@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Product.Entity.Model.product>
+@using Product.BAL.Tool
+@foreach (var product in Model)
+{
+    if (product.ProductImages.Count()>0)
+    {
+        <div class="product span4 col-lg-1">
+            <div class="product-title">
+                <h3> @Html.ActionLink(product.Name, "Index", "Product", new { id = product.Id },new { })</h3>
+            </div><div class="product-image">
+                <a href="@Url.Action("Index", "Product", new { id = product.Id })">
+                    <img width="300" height="220" src="@product.ProductImages.FirstOrDefault().ImageUrl.ToSetFilePath()" />
+                </a>
+            </div>
+
+            <div class="price">
+                @{
+                    var priceFeature = product.ProductFeatures.FirstOrDefault(x => x.Name == "Fiyatı");
+                    if (priceFeature != null)
+                    {
+                        <span>@priceFeature.Value</span>
+                    }
+                }
+            </div>
+        </div>
+
+
+                        }
+                    }

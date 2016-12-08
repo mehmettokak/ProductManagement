@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Product.Entity.Model.Category>
+@{
+    ViewBag.Title = "Anasayfa";
+}
+
+<div class="row">
+    @Html.Partial("_partial/MainMenu",Model)
+    <div class="col-md-9">
+        @Html.Partial("_partial/ProductList", Model.FirstOrDefault().Products)
+    </div>
+</div>
+

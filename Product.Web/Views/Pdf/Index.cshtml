@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3><a href="@Url.Action("Viewer","Pdf",new { path="Mehmet TOKAK-CV.pdf" })">View PDF File-1</a></h3>
+<h3>
+    <a href="/web/viewer.html?file=Document/Mehmet TOKAK-CV.pdf" target="_blank">View PDF File-2</a>
+</h3>
+    @*<h3><a href="/Pdf/Viewer/02052016110246.pdf">pdff</a></h3>*@
